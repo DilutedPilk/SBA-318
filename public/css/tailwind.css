@@ -1,1 +1,9 @@
- @import "tailwindcss";
+@import "tailwindcss";
+
+.input_div {
+    @apply flex justify-center items-center flex-col w-3xs;
+}
+
+.input {
+    @apply border-purple-600 border-2 bg-white rounded-sm m-3;
+}

@@ -6,10 +6,30 @@
     <title>Document</title>
     <link rel="stylesheet" href="./css/styles.css">
 </head>
-<body>
-    <div class="text-center font-bold">  
-        Hello world!
-    </div>
+<body class="bg-blue-950 flex justify-center items-center h-screen">
+    <main class="border-purple-600 border-2 shadow-fuchsia-600 shadow-lg bg-indigo-900 m-0 p-10 w-1/2 min-w-85 max-w-156 rounded-md">
+        <div class="flex justify-around items-start flex-wrap">
+            <div>
+                <h1 class="text-center text-white">Log In</h1>
+                <div class="input_div">
+                    <input type="text" placeholder="Username" class="input">
+                    <input type="text" placeholder="Password" class="input">
+                </div>
+            </div>
+            <div>
+                <h1 class="text-center text-white">Sign Up</h1>
+                <div class="input_div">
+                    <input type="text" placeholder="Name" class="input">
+                    <input type="text" placeholder="Username" class="input">
+                    <input type="text" placeholder="Password" class="input">
+                    <input type="text" placeholder="Re-type Password" class="input">
+                </div>
+                <div>
+                    <input type="checkbox" class="block m-3">
+                </div>
+            </div>
+        </div>
+    </main>
     <script src="./scripts/script.js"></script>
 </body>
 </html>
