@@ -11,25 +11,24 @@
         <div class="flex justify-around items-start flex-wrap">
             <div>
                 <h1 class="text-center text-white">Log In</h1>
-                <div class="input_div">
-                    <input type="text" placeholder="Username" class="input">
-                    <input type="text" placeholder="Password" class="input">
+                <div class="input_div" id="logIn">
+                    <input type="text" name="username" placeholder="Username" class="input">
+                    <input type="text" name="password" placeholder="Password" class="input">
+                    <button id="logInBtn" class="btn">Log In</button>
                 </div>
             </div>
             <div>
                 <h1 class="text-center text-white">Sign Up</h1>
-                <div class="input_div">
-                    <input type="text" placeholder="Name" class="input">
-                    <input type="text" placeholder="Username" class="input">
-                    <input type="text" placeholder="Password" class="input">
-                    <input type="text" placeholder="Re-type Password" class="input">
-                </div>
-                <div>
-                    <input type="checkbox" class="block m-3">
+                <div class="input_div" id="signUp">
+                    <input type="text" name="name" placeholder="Name" class="input">
+                    <input type="text" name="username" placeholder="Username" class="input">
+                    <input type="text" name="password" placeholder="Password" class="input">
+                    <input type="text" name="re_password" placeholder="Re-type Password" class="input">
+                    <button id="signUpBtn" class="btn">Sign Up</button>
                 </div>
             </div>
         </div>
     </main>
-    <script src="./scripts/script.js"></script>
+    <script src="./scripts/home_script.js"></script>
 </body>
 </html>
