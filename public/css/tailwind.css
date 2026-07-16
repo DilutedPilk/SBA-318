@@ -7,3 +7,15 @@
 .input {
     @apply border-purple-600 border-2 bg-white rounded-sm m-3;
 }
+
+.input_content {
+    @apply bg-white rounded-sm
+}
+
+.btn {
+    @apply self-end m-5 p-2 border-purple-600 border-2 bg-purple-800 rounded-md text-white;
+}
+
+.btn:hover {
+    @apply bg-purple-600
+}

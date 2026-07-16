@@ -3,15 +3,20 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Documents</title>
+    <link rel="stylesheet" href="http://localhost:3000/css/styles.css">
 </head>
 <body class="bg-blue-950">
-    <nav class="bg-indigo-900 h-28 w-full flex justify-end items-center">
-        <button class="p-1">New Document</button>
-    </nav>
     <main class="flex flex-wrap p-5">
-
+        <div id="docs" class="flex flex-col absolute m-10 p-10 border-2 border-b-black w-1/2 min-w-85 max-w-156 rounded-md bg-indigo-900">
+            <h3 >Title</h3>
+            <input class="border-2 border-b-black w-full input_content"type="text" name="title" placeholder="Title">
+            <h3>Body</h3>
+            <input type="text" name="body" placeholder="Body" class="border-2 border-b-black w-full input_content">
+            <button id="post" class="self-end p-2 border-purple-600 border-2 bg-purple-800 rounded-md text-white">Post</button>
+        </div>
+        <div id="content" class="text-blue-50"></div>
     </main>
-    <script src="./scripts/content_script.js"></script>
+    <script src="http://localhost:3000/scripts/content_script.js"></script>
 </body>
 </html>
