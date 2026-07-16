@@ -22,7 +22,7 @@ router
     res.send(documents);
     })
     .post((req,res)=>{
-
+        res.json(req.body);
     })
 
 router.get('/:user_id', async (req, res) =>{

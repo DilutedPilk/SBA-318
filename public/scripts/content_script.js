@@ -55,12 +55,20 @@ displayDocs()
 const new_doc = document.getElementById('docs')
 
 new_doc.addEventListener('click', async (e) => {
-    
+    const inputs = signUp.getElementsByTagName('input')
+    const titleTxt = inputs.title.value
+    const bodyTxt = inputs.body.value
+    const btn = document.getElementById('post')
+    const documents = await getDocuments();
+    const loggedUser = await getLoggedIn();
+
     if (e.target==btn){
-        const inputs = signUp.getElementsByTagName('input')
-        const title = inputs.title.value
-        const user = inputs.body.value
-
-
+        fetch(`${URL}/documents/`, {
+            method: 'POST',
+            body: JSON.stringify({ doc_id: documents.length+1, user_id: loggedUser.id, title: titleTxt, body: bodyTxt }),
+            headers: {
+                'content-type': 'application/json'
+            }
+        })
     }
 })
