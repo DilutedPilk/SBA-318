@@ -10,3 +10,5 @@ Honestly, a lot. I didnt feel too confident when making this project, mostly due
 
 I intended it to make it work so that you can edit and delete each document through user interaction and event handlers, but I couldnt find out how to get that working.
 I feel like I got most of the requirements done, but not in a state that I wanted. This project was the hardest for me, however I did learn my weaknesses from this I am motivated to work harder.
+
+Hopefully I can look back on this project in the future and see how far i've come.
