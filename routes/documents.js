@@ -30,7 +30,7 @@ router.get('/:user_id', async (req, res) =>{
     if (req.params.user_id == loggedInUser.id){
         res.render('content');
     } else {
-        res.redirect(`/`)
+        throw new Error("You are not logged into this user.")
     }
 });
 
@@ -48,7 +48,7 @@ router
 
     })
     .delete((req,res)=>{
-
+        
     })
 
 router.use((err, req, res, next) => {
