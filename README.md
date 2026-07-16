@@ -2,6 +2,8 @@
 
 A web program that makes new users and shows posts made by each user. The posts on the user pages are filtered so that the user can only see their own posts.
 
+when logged into a user, you have to redirect the URL to localhost:3000/documents/(user id) on your own.
+
 <h3 align="center"> Issues </h3>
 
 Honestly, a lot. I didnt feel too confident when making this project, mostly due to time constraints.
